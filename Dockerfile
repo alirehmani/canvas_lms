@@ -97,7 +97,7 @@ RUN set -eux; \
     /home/docker/.gem/
     
 #RUN bundle exec rails assets:precompile --silent RAILS_ENV=production
-RUN yarn autoclean --force
+#RUN yarn autoclean --force
 RUN chmod +x ./entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
 
